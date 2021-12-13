@@ -20,7 +20,10 @@
     
   
   <!-- Font Awesome -->
+  
   <link href="https://fonts.googleapis.com/css?family=Akronim|Bellefair|Joti+One" rel="stylesheet">
+  
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <!-- Bootstrap core CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
@@ -30,8 +33,77 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
   <link rel="stylesheet" href="{% static 'css/basenews.css' %}">
   <link rel="stylesheet" href="{% static 'star-ratings/css/star-ratings.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   {% endblock %}
   <script type="text/javascript" src="{% static 'star-ratings/js/dist/star-ratings.min.js' %}"></script>
+
+
+
+
+  <style>
+
+    .footer {
+       position: relative;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       background-color: rgb(10, 10, 10); 
+       color: white;
+       text-align: center;
+       height: 100px;
+       border-radius: 14px;
+       
+    }
+    
+      .fa {
+        padding: 4px;
+        font-size: 20px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        /* margin: 5px 2px; */
+        border-radius: 30%;
+      }
+    
+      .fa:hover {
+          opacity: 0.7;
+      }
+    
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+      }
+    
+      .fa-twitter {
+        background: #55ACEE;
+        color: white;
+      }
+    
+      .fa-google {
+        background: #dd4b39;
+        color: white;
+      }
+    
+      .fa-linkedin {
+        background: #007bb5;
+        color: white;
+      }
+    
+      .fa-youtube {
+        background: #bb0000;
+        color: white;
+      }
+    
+      .fa-instagram {
+        background: #125688;
+        color: white;
+      }
+    
+      .fa-pinterest {
+        background: #cb2027;
+        color: white;
+      }
+    </style>
 
 </head>
 
@@ -68,59 +140,21 @@
     {% endblock %}
     <div class="mb-4 pb-4"></div>
    <!-- Footer -->
-<footer class="page-footer font-small special-color-dark pt-4">
-
-  <!-- Footer Elements -->
-  <div class="container">
-
-    <!-- Grid row-->
-    <div class="row">
-
-      <!-- Grid column -->
-      <div class="col-md-12 py-5">
-        <div class="mb-5 flex-center">
-
-          <!-- Facebook -->
-          <a class="fb-ic">
-            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          <!-- Twitter -->
-          <a class="tw-ic">
-            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          <!-- Google +-->
-          <a class="gplus-ic">
-            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          <!--Linkedin -->
-          <a class="li-ic">
-            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          <!--Instagram-->
-          <a class="ins-ic">
-            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          <!--Pinterest-->
-          <a class="pin-ic">
-            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
-          </a>
-        </div>
-      </div>
-      <!-- Grid column -->
-
-    </div>
-    <!-- Grid row-->
-
-  </div>
-  <!-- Footer Elements -->
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2021 Copyright:
-    <a href="https://github.com/asandelarvine"> AsandeLarvine </a>
-  </div>
-  <!-- Copyright -->
-
-</footer>
+   <div class="container-fluid ">
+    <div class="footer">
+    <h6 style="color:greenyellow;">2021 Copyright:</h6>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-google"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-pinterest"></a>
+    
+  <h6 style="color:white; font-size:10px;"><br> Asande Larvine</h6>
+    
+   </div>
+</div> 
 <!-- Footer -->
 </body>
 
