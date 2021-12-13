@@ -31,7 +31,7 @@ As a user of the application you will be able to:
 
 | __Behavior__  | __Input example__ | __Output example__ |
 | ------------- | ----------------- | ------------------ |
-| The user should see the landing page on first sight | "https://www.insta.com"   | Home  |
+| The user should see the landing page on first sight | "http://127.0.0.1:8000/"   | Home  |
 | The application should provide an option to register or login to the app | login/register | true  |
 | The application should authenticate Users base on details the user provides   | password/username |  access or no access |
 | The user should be redirected to home page once logged in | access | home page |
