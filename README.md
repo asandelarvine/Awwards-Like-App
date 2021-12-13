@@ -21,7 +21,7 @@ As a user of the application you will be able to:
 2. A user can sign up.
 3. View projects. 
 4. A user can submit his or her own projects.
-5. A user can upvote or downvote on a project.
+5. A user can upvote or rather give stars on a project.
 6. A user is also able to change his or her profile,add bio .
 7. A user can also comment on other people's project. 
 
@@ -53,7 +53,7 @@ As a user of the application you will be able to:
     password : `awwardspassword`
 ### Installation and setup instructions
 
-1. Clone this repo: git clone https://github.com/asandelarvine/Instagram_Clone
+1. Clone this repo: git clone https://github.com/asandelarvine/Awwards-Like-App
 2. The repo comes in a zipped or compressed format. Extract to your preferred location and open it.
 3. open your terminal and navigate to gallery then create a virtual environment.For detailed guide refer  [here](https://packaging.python.org/guides/installing-using-pip-and-virtualenv/)
 3. To run the app, you'll have to run the following commands in your terminal
@@ -84,7 +84,7 @@ As a user of the application you will be able to:
 
 ## Known Bugs
 
-* One of my projects "Pitch~Zone" site can not be viewed, yet to be resolved.
+* No none bugs at the moment.
 
 
 ## CONTACTS
