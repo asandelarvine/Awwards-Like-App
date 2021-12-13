@@ -7,6 +7,7 @@ Asande Larvine
 
 
 ## DESCRIPTION 
+This is a professional web design and development competition body where Developers can submit to.
 
 
 
@@ -90,4 +91,5 @@ As a user of the application you will be able to:
 asandelarvine@gmail.com
 
 ## LIVE LINK
+https://larv-awwards-2021.herokuapp.com/
 
