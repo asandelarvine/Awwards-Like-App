@@ -1,6 +1,6 @@
 
 <!--Navbar-->
-<nav class="pl-5 pr-5 navbar navbar-expand-lg navbar-light bg-light sticky-top" style=" font-family: 'Joti One'; height: 12vh;">
+<nav class="pl-5 pr-5 navbar navbar-expand-lg navbar-light bg-light sticky-top" style=" font-family: 'Joti One'; height: 12vh;background-color:black; ">
 
     <!-- Navbar brand -->
     <!-- <img height="50"  src="/static/images/logo1.png" alt=""></a> -->
@@ -13,7 +13,7 @@
     </button>
   
     <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="basicExampleNav">
+    <div class="collapse navbar-collapse" id="basicExampleNav" >
       <!-- Links -->
       <ul class="navbar-nav mr-auto">
           <li class="text-white nav-item">
@@ -33,11 +33,11 @@
       
         </ul>
     
-          <div class="col-sm-6 col-lg-6 d-flex justify-content-end">
-            <div class="web">
+          <div class="col-sm-6 col-lg-6 d-flex justify-content-end" >
+            <div class="web" >
               {% if user.is_authenticated %}
               <ul class="navbar-nav me-auto ">
-                <li class="nav-item">
+                <li class="nav-item" >
                   <a class="nav-link btn btn-block text-white success-color-dark" href="{%url 'new-project'%}">SUBMIT YOUR WEBSITE </a>
                 </li>
                  
