@@ -84,7 +84,7 @@ As a user of the application you will be able to:
 
 ## Known Bugs
 
-* One of my projects "Pitchez" site can not be viewed, yet to be resolved.
+* One of my projects "Pitch~Zone" site can not be viewed, yet to be resolved.
 
 
 ## CONTACTS
