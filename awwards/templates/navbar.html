@@ -1,0 +1,82 @@
+
+<!--Navbar-->
+<nav class="pl-5 pr-5 navbar navbar-expand-lg navbar-light bg-light sticky-top" style=" font-family: 'Joti One'; height: 12vh;">
+
+    <!-- Navbar brand -->
+    <!-- <img height="50"  src="/static/images/logo1.png" alt=""></a> -->
+    <!-- <a class="navbar-brand font-weight-bold title" href="{% url 'index' %}"style="font-size: 30px; font-weight:bold">AWWARDS</a> -->
+    
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+          <li class="text-white nav-item">
+            <a class="nav-link" href="{% url 'index' %}" style="font-size: 30px; font-weight:bold">Home</a>
+          </li>
+          
+        
+        {% if user.is_authenticated %}
+
+        <form id='search' role="search"  action="{% url 'search_results' %}" class="form-inline my-2 my-lg-0 animated fadeIn" >
+          <input required name='name' class="form-control mr-sm-2" type="search" placeholder="Search by name" aria-label="Search">
+          <button class="btn btn-outline-default" type="submit"<i class="fas fa-search"><i class="fas fa-search"></i></i>
+          </button>
+        </form>
+        
+        {% endif %}
+      
+        </ul>
+    
+          <div class="col-sm-6 col-lg-6 d-flex justify-content-end">
+            <div class="web">
+              {% if user.is_authenticated %}
+              <ul class="navbar-nav me-auto ">
+                <li class="nav-item">
+                  <a class="nav-link btn btn-block text-white success-color-dark" href="{%url 'new-project'%}">SUBMIT YOUR WEBSITE </a>
+                </li>
+                 
+               <ul>
+              </div>
+                {% endif %}
+                <div class="acc">
+                <li class="dropdown list-unstyled text-white">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"  style=" color: black;">
+                    <i class="fas fa-user" style="color: black;"></i> My Account </a>
+                  <ul class="dropdown-menu dropdown-default" role="menu">
+                    <li>
+                        <a class="dropdown-item" href="{%url 'profile'%}">Profile</a>
+                      </li>
+                    <li>
+                      <a class="dropdown-item" href="/accounts/password/change">Change Password</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/logout">Logout</a>
+                    </li>
+                  </ul>
+                   <li style="list-style-type: none;" >
+                      <a class="nav-link" href="/admin" style=" color: black;">Dashboard</a>
+                  </li>
+                  {% if user.is_authenticated %}
+                </li>
+              </div>
+              {% else %}
+              <li class="list-unstyled">
+                  <a class='btn btn-sm btn-default font-weight-bold' href="/accounts/login" style="font-size: 15px;">Login</a>
+                  <a class='btn btn-sm btn-default font-weight-bold' href="/accounts/register"style="font-size: 15px;">Register</a>
+              </li>
+
+              {% endif %}
+              
+        </div>
+
+    </div>
+    <!-- Collapsible content -->
+  </nav>
+  <!--/Navbar-->
