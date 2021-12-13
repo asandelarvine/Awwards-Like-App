@@ -84,7 +84,8 @@ As a user of the application you will be able to:
 
 ## Known Bugs
 
-* No none bugs at the moment.
+* The search button not working as it should at the moment, yet to be resolved.
+
 
 
 ## CONTACTS
